@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --cor1: #1F203A;
+    --cor2: #F2F2F2;
+    --cor3: #FFA54D;
+
+    --fonte-destaque: 'Roboto', sans-serif;
+    --fonte-padrao: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+    background: #313131;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #5e5e5e;
+  }
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    font-family: var(--fonte-destaque);
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: var(--fonte-padrao);
+    font-weight: 500
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 32px;
+    letter-spacing: 2px;
+}
+
+.faixa {
+    background-color: var(--cor2);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.faixa img {
+    width: 422px;
+    height: 422px;
+    margin-top: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 8px white solid;
+}
+
+.container-text {
+    margin-top: 70px;
+    height: 42vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-text h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    font-family: var(--fonte-destaque);
+}
+
+.container-text h2 > span {
+    font-weight: 300;
+}
+
+.container-text p {
+    width: 543px;
+    margin: 20px auto 0;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    line-height: 1.6;
+}
+
+#btn {
+    color: #000;
+    display: table;
+    font-family: var(--fonte-destaque);
+    border-style: none none solid;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 50px auto 60px;
+}
+
+.container {
+    position: relative;
+}
+
+#faixa {
+    background-color: var(--cor2);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.apresentacao {
+    height: 100vh;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0;
+    font-family: var(--fonte-destaque);
+}
+
+.apresentacao span {
+    font-weight: 500;
+}
+
+.apresentacao img {
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+    margin-top: 63px;
+    margin-bottom: 0;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 img {
+    width: 545px;
+    height: 590px;
+}
+
+.box2 img {
+    width: 545px;
+    height: 590px;
+}
+
+.box2 a {
+    color: #000;
+    font-family: var(--fonte-padrao);
+    letter-spacing: 2px;
+    border: 2px solid rgba(0, 0, 0, 0.596); 
+    padding: 10px 20px;
+    margin: 80px auto;
+}
+
+.flex {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box3 {
+    width: 570px;
+    height: 650px;
+}
+
+.box3 h1 {
+    font-family: var(--fonte-destaque);
+    text-align: right;
+    font-size: 8.125rem;
+    font-weight: 300;
+
+}
+
+.box3 span {
+    font-weight: 600;
+}
+
+.box4 {
+    width: 570px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 164px 30px 30px;
+}
+
+.box4 p {
+    font-family: var(--fonte-padrao);    
+    text-align: left;
+    margin: 115px 0 0;
+}
+
+.box4 a {
+    color: #fff;
+    font-family: var(--fonte-padrao);
+    text-transform: uppercase;
+    margin-top: 50px;
+    background-color: var(--cor3);
+    padding: 10px 20px;
+}
+
+.container3 {
+    height: 80vh;
+}
+
+.container3 h2 {
+    font-family: var(--fonte-padrao);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    width: 680px;
+    height: 300px;
+    margin: 46px auto;
+    text-align: center;
+}
+
+.line {
+    border: 6px solid black;
+    width: 795px;
+    margin: 60px auto 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+
+.icoanimated {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.container3 h5 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 33px;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-portifolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.images-portifolio img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 5px;
+
+}
+
+.images-portifolio div:hover {
+    background-image: linear-gradient(0deg, rgba(255,165,77,1), rgba(255,165,77,1));
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+footer {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/footer.jpg');
+    width: 100%;
+    height: 450px;
+    padding: 60px;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 80px auto 50px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media div {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(245, 222, 179, 0.63);
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-media div:hover {
+    background-color: wheat;
+    transition: 0.5s;
+}
